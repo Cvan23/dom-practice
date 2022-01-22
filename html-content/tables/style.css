@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(40, 68, 92);
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+  margin: 2;
+}
+
+.container {
+  margin: 20px;
+  padding: 5px;
+}
+
+.text-prim {
+  font-size: 40px;
+}
+
+td, th {
+  border: 1px solid aliceblue;
+  border-width: .35vh;
+  padding: 12px;
+}
+
+table {
+  color: rgb(112, 251, 251);
+}
+
+fieldset {
+  width: 300px;
+  border: solid;
+  border-width: .35vh;
+  padding: 5px 5px;
+  margin: 5px;
+}
+
+legend {
+  font-size: 25px;
+}
+
+
+
+.input {
+  border: none;
+  background-color: rgb(101, 101, 114);
+  color: aliceblue;
+  border-radius: 2.5px;
+  font-size: 15px;
+  font-weight: 550;
+  padding: 5px;
+  display: block;
+}
+
+.input::placeholder {
+  color: rgba(240, 248, 255, 0.287);
+}
+
+.btn {
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 8px 20px;
+  margin: 10px;
+}

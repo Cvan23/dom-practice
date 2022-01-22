@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css">
+	<title>HTML Lists, Tables & Forms</title>
+</head>
+<body>
+	<h1 class="text-prim">HTML Lists, Tables & Forms</h1>
+
+	<div class="container">
+		<h1>Lists</h1>
+			<h2>Ordered Lists</h2>
+			<ol>
+				<li>This is ordered list item 1</li>
+				<li>This is ordered list item 2</li>
+				<li>This is ordered list item 3</li>
+				<li>This is ordered list item 4</li>
+			</ol>
+			<h2>Unordered Lists</h2>
+			<ul>
+				<li>This is unordered list item 1</li>
+				<li>This is unordered list item 2</li>
+				<li>This is unordered list item 3</li>
+				<li>This is unordered list item 4</li>
+			</ul>
+	</div>
+
+	<div class="container">
+		<h1>Tables</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>State</th>
+						<th>Motto</th>
+						<th>Flower</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Alaska</th>
+						<td>North to the Future</td>
+						<td>Forget-me-not</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th>California</th>
+						<td>Eureka</td>
+						<td>California Poppy</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th>Rhode Island</th>
+						<td>Forward</td>
+						<td>Violet</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+
+	<div class="container">
+		<h1>Forms</h1>
+			<h2>Survey</h2>
+			<form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+
+				<fieldset>
+					<legend>Your Info</legend>
+					<div>
+						<label for="firstName"><h3>First Name:</h3></label>
+						<input class="input" type="text" name="firstName" id="firstName" placeholder="Your First Name" />
+					</div>
+					<div>
+						<label for="lastName"><h3>Last Name:</h3></label>
+						<input class="input" type="text" name="lastName" id="lastName" placeholder="Your Last Name" />
+					</div>
+					<div>
+						<label for="email"><h3>Email:</h3></label>
+						<input class="input" type="email" name="email" id="email" placeholder="Your Email Address" />
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Survey Questions</legend>
+					<div>
+						<h3>Favorite Cat:</h3>
+						<input type="radio" name="cat" id="tuxie" value="tuxie" /><label for="tuxie">Tuxie</label>
+						<input type="radio" name="cat" id="tortie" value="tortie" /><label for="tortie">Tortie</label> 
+						<input type="radio" name="cat" id="tabby" value="tabby" /><label for="tabby">Tabby</label>
+					</div>
+					<div>
+						<h3>Your Pets:</h3>
+						<input type="checkbox" name="pets" id="cat" value="cat" /><label for="cat">Cat</label>
+						<input type="checkbox" name="pets" id="dog" value="dog" /><label for="dog">Dog</label>  
+						<input type="checkbox" name="pets" id="bird" value="bird" /><label for="bird">Bird</label>  
+					</div>
+				</fieldset>
+				<input class="btn" type="submit" />
+			</form>
+	</div>
+	<div class="container">
+		<button class="btn" id="alert-1">Click Me!</button>
+		<button class="btn" id="alert-2">No, Click Me!</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
