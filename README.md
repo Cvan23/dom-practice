@@ -1,1 +1,1 @@
-# A sandbox for working with the DOM and general Javascript practice
+# A sandbox for working with the DOM and general HTML/CSS/Javascript practice
