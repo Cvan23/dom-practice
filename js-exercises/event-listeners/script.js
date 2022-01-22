@@ -13,6 +13,11 @@ grandparent.addEventListener('click', (e) => {
 parent.addEventListener('click', (e) => {
   audio1.play();
 
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  const randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+  child1.style.backgroundColor = "#" + randomColor;
+  child2.style.backgroundColor = "#" + randomColor2;
+
   e.stopPropagation();
 });
 
