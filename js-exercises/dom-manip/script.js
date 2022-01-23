@@ -43,11 +43,7 @@ box2.addEventListener('click', (e) => {
   e.stopPropagation();
 });
 
-btn.addEventListener('click', () => {
-  // alert("Not quite working yet!");
-
-  getName();
-});
+btn.addEventListener('click', () => getName());
 
 function getName() {
   const randomName = (arr) => arr[Math.floor(Math.random()* arr.length)];
@@ -55,6 +51,6 @@ function getName() {
   const choice = randomName(['queen', 'destroyer', 'manager', 'boss', 'overlord']);
 
   console.log(choice);
-  alert(choice);
-}
+  
+};
 
