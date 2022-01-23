@@ -31,6 +31,10 @@ h2 {
   color: rgba(0, 255, 255, 0.877);
 }
 
+h3, p {
+  color: rgb(127, 255, 144);
+}
+
 .box1 {
   display: flex;
   position: relative;
