@@ -6,6 +6,7 @@ const div1 = document.createElement('h3');
 div1.innerText = "Hello Kitty!";
 body1.append(div1);
 
+
 const div2 = document.createElement('div');
 div2.innerHTML = `
   <div class="container">
@@ -14,6 +15,7 @@ div2.innerHTML = `
       <div class="box2" id="box2"></div>
     </div>
     <h2 id="h2">She's queen of the universe!</h2>
+    <button class="btn" id="btn">Click Me!</button>
     <p>This HTML content has been created in the <br/> Javascript file</p>
   </div>
 `;
@@ -41,5 +43,23 @@ box2.addEventListener('click', (e) => {
   e.stopPropagation();
 });
 
+btn.addEventListener('click', () => {
+  alert("Not quite working yet!");
 
+  getName();
+});
+
+function getName() {
+  const randomName = new Array();
+
+    randomName[0] = "queen";
+    randomName[1] = "destroyer";
+    randomName[2] = "boss";
+    randomName[3] = "manager";
+    randomName[4] = "overlord";
+
+    const noun = Math.floor(Math.random()*randomName.length);
+  
+    console.log(noun); 
+}
 
