@@ -14,7 +14,7 @@ div2.innerHTML = `
     <div class="box1" id="box1">
       <div class="box2" id="box2"></div>
     </div>
-    <h2 id="h2">She's queen of the universe!</h2>
+    <h2 id="h2">She's ${getName()} of the universe!</h2>
     <button class="btn" id="btn">Click Me!</button>
     <p>This HTML content has been created in the <br/> Javascript file</p>
   </div>
@@ -44,22 +44,17 @@ box2.addEventListener('click', (e) => {
 });
 
 btn.addEventListener('click', () => {
-  alert("Not quite working yet!");
+  // alert("Not quite working yet!");
 
   getName();
 });
 
 function getName() {
-  const randomName = new Array();
+  const randomName = (arr) => arr[Math.floor(Math.random()* arr.length)];
 
-    randomName[0] = "queen";
-    randomName[1] = "destroyer";
-    randomName[2] = "boss";
-    randomName[3] = "manager";
-    randomName[4] = "overlord";
+  const choice = randomName(['queen', 'destroyer', 'manager', 'boss', 'overlord']);
 
-    const noun = Math.floor(Math.random()*randomName.length);
-  
-    console.log(noun); 
+  console.log(choice);
+  alert(choice);
 }
 
